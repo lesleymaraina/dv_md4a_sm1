@@ -1,0 +1,348 @@
+---
+title: "Why Interactivity Changes Scientific Inference"
+author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
+
+format: 
+  revealjs:
+    #theme: solarized
+    css: style.css
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Flame.jpg
+    #css: styles.css
+    
+---
+
+## Lecture Outline
+
+
+- Examine how interactive data visualization changes scientific inference in biomedical research
+- Contrast static figures with interactive dashboards that support controlled data exploration
+- Discuss why interactivity is essential for multidimensional biomedical questions that cannot be resolved with a single static view
+- Compare static vs. interactive figures
+
+
+::: footer
+
+:::
+
+## Defining Interactive Dashboards
+
+- interactive data visualization has become central to how biomedical evidence is explored, interpreted
+- analysts, clinicians, and decision-makers interact with data— stratifying by biomarkers, adjusting thresholds, and exploring uncertainty in real time
+- traditional static figures represent a fixed analytical decision: the cohort is pre-defined, the model is specified, and the visualization reflects a single analytical view
+- interactive visualizations allow users to explore multiple analytical views from the same underlying dataset
+
+::: footer
+
+:::
+
+## Defining Interactive Dashboards
+
+- Interactive dashboards: structured analytical interfaces that allow users to dynamically explore, filter, and compare biomedical data while remaining anchored to a single, governed data source
+
+- Static figures: enable controlled interaction—such as cohort selection, stratification, and linked views—so that clinicians, scientists, and decision-makers can interrogate evidence without altering the underlying analysis pipeline
+
+
+::: footer
+
+:::
+
+
+## Why Static Figures Fall Short for Complex Biomedical Questions
+
+
+- Many biomedical questions are intrinsically multidimensional and cannot be resolved through a single contrast or summary statistic
+- Clinical datasets often require simultaneous conditioning on biomarkers, treatment history, dose, time, and patient characteristics
+
+
+::: footer
+
+:::
+
+
+
+## Why Static Figures Fall Short for Complex Biomedical Questions
+
+- Public health surveillance data shift across geography and time
+- Static figures force these dimensions to be collapsed prematurely, often masking important structure or heterogeneity
+  - each additional question requires a new reduction of the data, slowing the analytical cycle and increasing interpretive lag
+
+::: footer
+:::
+
+## Why Static Figures Fall Short for Complex Biomedical Questions
+
+- a single biomedical dataset is typically interrogated along multiple analytical dimensions: clinical relevance, biological plausibility, and methodological validity
+  - Resulting figures are different projections of the same underlying data
+- static figures reflects a chain of analytical decisions: cohort definitions, stratifications, model specifications, inclusion criteria, and assumptions about missingness and time
+
+
+
+::: footer
+:::
+
+## Why Static Figures Fall Short for Complex Biomedical Questions
+
+
+- static figures freeze that chain into a single outcome, obscuring how the result depends sets of preliminary analytical choices
+- when results are communicated through static figures, each projection is often materialized as a separate plot, subset, or report
+
+
+::: footer
+:::
+
+
+
+## Defining Interactivity in Data Analysis
+
+- Interactivity refers to user-driven operations that modify what data are shown or how they are summarized
+- Example operations include: filtering, sorting, brushing, zooming, parameter adjustment, and coordinated highlighting across views
+- Interactivity allows a single dataset to support multiple analytical questions
+- Example: a clinician may want to examine outcomes stratified by disease stage, while a researcher may explore molecular subtypes, and a regulator may focus on enrollment sites or protocol deviations
+
+::: footer
+:::
+
+## Defining Interactivity in Data Analysis
+
+- Interactivity preserves a single governed analytical backbone while allowing multiple controlled views
+- Filters, stratifications, and linked displays operate within the same computational framework, ensuring that all exploration remains anchored to the same evidence
+- Interactivity allows domain experts to navigate these dimensions directly, interrogating the data in real time while remaining within predefined analytical constraints
+- Reduction in time between data generation and decision-making—an essential capability in clinical and biomedical research
+
+::: footer
+:::
+
+## Static vs. Interactive Representations of TCGA Data
+
+Interactivity allows analysts to examine how results depend on analytical choices, including population definitions, measurement models, and stratification thresholds, rather than treating these choices as fixed
+
+In oncology, dashboards are increasingly used as analytical workspaces, supporting tasks such as cohort exploration, survival comparison, and biomarker-based stratification across heterogeneous patient populations
+
+
+::: footer
+:::
+
+## <span style="font-size:80%">Static TCGA Data Representation</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+
+
+- Thorsson, V., et al. (2018) define and characterize fundamental immune states of human tumors across cancer types using TCGA data
+
+- **Figure 1** illustrates the discovery of immune subtypes across TCGA tumors
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/figure_1_all.png){.border .border-thick}
+:::
+
+:::
+
+::: footer
+:::
+
+
+## <span style="font-size:80%">Static TCGA Data Representation</span> {.smaller}
+
+::: columns
+::: {.column width="40%"}
+
+
+Thorsson, V., et al. (2018) define and characterize fundamental immune states of human tumors across cancer types using TCGA data
+
+- Figure 1 illustrates the discovery of immune subtypes across TCGA tumors
+
+- Panel A: correlation heatmap of immune-related gene expression signatures
+
+
+
+:::
+
+::: {.column width="60%"}
+
+
+![](images/figure_1_a.png){.border .border-thick}
+:::
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Static TCGA Data Representation</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+
+Thorsson, V., et al. (2018) define and characterize fundamental immune states of human tumors across cancer types using TCGA data
+
+- Figure 1 illustrates the discovery of immune subtypes across TCGA tumors
+
+- Panel B: lists dominant immune programs
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/figure_1_b.png){.border .border-thick}
+:::
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Static TCGA Data Representation</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+
+
+Thorsson, V., et al. (2018) define and characterize fundamental immune states of human tumors across cancer types using TCGA data
+
+- Figure 1 illustrates the discovery of immune subtypes across TCGA tumors
+
+- Panel C: presents a heatmap of tumors clustered into six immune subtypes; violin plots show that six immune subtypes are not arbitrary cluster labels, but correspond to distinct and statistically separable immune states
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/figure_1_c.png){.border .border-thick}
+:::
+
+:::
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Static vs. Interactive Representations of TCGA Data</span> {.smaller}
+
+
+- Static data visualization displays fixed output from a previous analytical pipeline so that the reader can see the same result in the same way
+- Within the selected figure, the authors have already decided which data to include, how to process it, how to group samples, and what comparisons to show
+- The figure displays the same evidence under the same assumptions - ideal for communicating clear scientific conclusions and for ensuring that results can be discussed, critiqued, and reproduced consistently
+
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">Static vs. Interactive Representations of TCGA Data</span> {.smaller}
+
+
+Interactive dashboards work differently: users can change cohorts, features, thresholds, and comparison groups, and each interaction effectively generates a new analysis
+
+Interactive plots can help address the following:
+
+- What questions can be asked
+- How quickly evidence can be interrogated
+- Who participates in inference
+
+
+::: footer
+
+:::
+
+## <span style="font-size:80%">Static vs. Interactive Representations of TCGA Data</span> {.smaller}
+
+- Thorsson, V., et al. (2018) figure presented TCGA immune structure under fixed analytical decisions, producing a stable, publication-grade reference view of tumor immune states
+- Next we’ll explore an interactive representation of similar TCGA immune data, where key analytical choices—cohort selection, gene stratification, immune modeling, and comparisons—are exposed to the user
+- tcgaViz dashboard (Camenen et al.) transforms immune deconvolution results into a reactive analytical environment, allowing users to explore how immune cell distributions change under different assumptions
+
+This shift does not replace static analysis; instead, it changes the scientific question:
+
+ From “What did the authors find under these assumptions?” $\rightarrow$ To “How do conclusions change when assumptions change?”
+
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">tcgaViz Dashboard Overview</span> {.smaller}
+
+Immune cell abundance varies widely across tumors, even within the same cancer type
+
+TCGA-VIZ is an interactive analytical dashboard designed to explore associations between tumor gene expression and inferred immune cell composition across TCGA cancer cohorts.
+
+- **Data source**: TCGA RNA-seq (gene-level expression)
+
+- **Inference layer**: Immune deconvolution algorithms (e.g., CIBERSORT_ABS)
+
+- **Scientific question encoded in dashboard**:
+ How does the abundance of specific immune cell types differ between tumors with high vs low expression of a given gene?
+
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%"></span> {.smaller}
+
+*Navigate to dashboard*
+
+
+::: footer
+
+:::
+
+
+## <span style="font-size:80%">Review</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+
+**Static Figure**
+
+- Focused on a specific hypothesis
+- Requires the author to interpret, annotate, and guide the viewer
+- Excellent for teaching, assessment, and dissemination
+
+
+:::
+
+::: {.column width="50%"}
+
+**Dynamic Dashboard**
+
+- Focused on self-directed data interrogation
+- Users discover patterns before formally testing them
+- Shifts burden of interpretation to the user
+
+
+Advantages:
+
+- Can quickly rule out many null hypotheses
+- Supports real-time subgroup analysis
+- Enables personalized discovery (e.g., “show me how TP53 expression relates to macrophage M1”)
+
+
+:::
+
+:::
+::: footer
+:::
